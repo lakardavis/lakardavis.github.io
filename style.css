@@ -749,3 +749,19 @@ hr.markdown-separator {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
 }
+
+/* Footer Styling */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.site-footer p {
+    margin: 0;
+}
