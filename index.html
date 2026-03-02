@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Craft Progression Checklist</title>
+    <!-- Import Outfit font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-accents">
+        <div class="accent circle-1"></div>
+        <div class="accent circle-2"></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="header-container flex-between">
+            <div class="header-titles">
+                <h1>Crazy Craft Progression</h1>
+                <p>Interactive automated tracking.</p>
+            </div>
+
+            <div class="header-actions">
+                <button id="backBtn" class="btn-back hidden">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back to Home
+                </button>
+
+                <div class="save-indicator" id="saveIndicator">
+                    Changes saved
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HOME VIEW (Grid of Phases) -->
+        <div id="homeView" class="view active">
+            <div class="welcome-banner glass-panel">
+                <h2>Welcome to Crazy Craft Progression</h2>
+                <p class="intro-text">
+                    This guide breaks down your adventure into structured phases.
+                    From your early survival shelter to late-game server mega-factories, track your progress
+                    automatically.
+                    Click a phase below to jump into your checklist for that tier.
+                </p>
+                <div style="margin-top: 1.5rem; display: flex; justify-content: center;">
+                    <button id="resetBtn" class="btn-reset" title="Uncheck everything and start over">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 2v6h6"></path>
+                            <path d="M21 12A9 9 0 0 0 6 5.3L3 8"></path>
+                            <path d="M21 22v-6h-6"></path>
+                            <path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"></path>
+                        </svg>
+                        Reset All Progress
+                    </button>
+                </div>
+            </div>
+
+            <div id="phaseGrid" class="phase-grid">
+                <!-- Javascript injects Phase cards here -->
+                <div class="loading">Loading progression data...</div>
+            </div>
+        </div>
+
+        <!-- PHASE VIEW (Checklist content) -->
+        <div id="phaseView" class="view hidden">
+            <div class="glass-panel" id="checklistContainer">
+                <!-- Javascript injects active Phase checklist here -->
+            </div>
+        </div>
+
+        <!-- Cookie / LocalStorage Consent Modal -->
+        <div id="cookieModal" class="modal-overlay hidden">
+            <div class="glass-panel modal-content">
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 2v20"></path>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </div>
+                <h2>Local Storage Notice</h2>
+                <p>To automatically save your progress without needing an account, this site uses your browser's local
+                    storage (cookies).</p>
+                <p>Your checklist data is safely saved directly on this device.</p>
+                <button id="acceptCookiesBtn" class="btn-primary">I Understand</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
