@@ -10,17 +10,6 @@ Secure a safe perimeter before the first night, avoiding early Chaos Awakens mob
 
 ## 1.1 The First Day Rush Not Started
 
-
-PRIMARY OBJECTIVE:  
-Stabilize survival while building the foundation for full automation in a hostile world.
-
-SECONDARY OBJECTIVE:  
-Secure a safe perimeter before the first night, avoiding early Chaos Awakens mobs. Gather early baubles and a backpack for inventory management.
-
----
-
-## 1.1 The First Day Rush Not Started
-
 Mine these immediately to survive:
 * [ ] Wood Logs (minimum 64)
 * [ ] Cobblestone (minimum 64)
@@ -937,3 +926,4 @@ Prove your dedication to absolute hoarding:
 * [ ] Craft 7x Compressed Cobblestone (4,782,969 blocks)
 * [ ] Craft 8x Compressed Cobblestone (43,046,721 blocks)
     *Tip:* Octuple Compressed! Keep going, you're almost at the limit of block hardness!
+
